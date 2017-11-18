@@ -11,10 +11,15 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
   background-color: #ffffff;
   text-transform: uppercase;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
   text-transform: none;
   padding: 1.4rem 3rem 0 0.6rem;
@@ -28,6 +33,7 @@ nav a {
   font-size: 1.3rem;
   color: rgba(0, 0, 0, 0.87);
   padding-left: 1.9rem;
+  -webkit-text-decoration-style: solid;
   text-decoration-style: solid;
 }
 
@@ -36,7 +42,8 @@ nav a:hover {
   opacity: 0.85;
 }
 
-nav a:visited,nav a:active {
+nav a:visited,
+nav a:active {
   color: rgba(0, 0, 0, 0.87);
 }
 
@@ -50,8 +57,10 @@ nav a:visited,nav a:active {
   color: #ffffff;
   font-weight: bold;
   text-transform: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(#4387fd), to(#4683ea));
   background: linear-gradient(to bottom, #4387fd, #4683ea);
   padding: 0.8rem 1.3rem 0.9rem 1.3rem;
+  -webkit-text-decoration-style: solid;
   text-decoration-style: solid;
   border-width: 0px;
   margin-top: 0.2rem;
@@ -60,6 +69,7 @@ nav a:visited,nav a:active {
 
 #signin:hover {
   text-decoration: none;
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
 }
 
@@ -70,6 +80,7 @@ nav a:visited,nav a:active {
   height: 2.4rem;
   background-size: cover;
   margin: auto 0;
+  -webkit-box-sizing: content-box;
   box-sizing: content-box;
 }
 
@@ -84,6 +95,7 @@ nav a:visited,nav a:active {
   height: 1.6rem;
   background-size: cover;
   opacity: 0.55;
+  -webkit-box-sizing: content-box;
   box-sizing: content-box;
   display: block;
   margin-top: 0.1rem;
@@ -110,6 +122,7 @@ img {
   padding-bottom: 2.7rem;
   margin: auto;
   grid-area: 1 / 2 / 2 / 3;
+  -webkit-box-sizing: content-box;
   box-sizing: content-box;
 }
 
@@ -123,7 +136,10 @@ form {
   width: 584px;
   grid-area: 2 / 2 / 3 / 3;
   display: grid;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-sizing: content-box;
   box-sizing: content-box;
   margin: auto;
   padding-left: 0.2rem;
@@ -139,7 +155,9 @@ input[type="text"] {
   grid-area: 1 / 1 / 2 / 2;
   font-size: 1.6rem;
   margin-left: 0.6rem;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 2px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 2px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 
@@ -158,6 +176,7 @@ input[type="text"] {
   border-radius: 0;
   padding: 0;
   background-color: #4d90fe;
+  background: -webkit-gradient(linear, left top, left bottom, from(#4d90fe), to(#4787ed));
   background: linear-gradient(to bottom, #4d90fe, #4787ed);
 }
 
@@ -172,10 +191,13 @@ input[type="text"] {
   height: 1.8rem;
   background-size: cover;
   display: block;
+  -webkit-box-sizing: content-box;
   box-sizing: content-box;
 }
 
 .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding-bottom: 2rem;
   padding-top: 2.25rem;
@@ -202,8 +224,10 @@ input[type="text"] {
 }
 
 .buttons input:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#f1f1f1));
   background: linear-gradient(to bottom, #f8f8f8, #f1f1f1);
   border: 1px solid #c6c6c6;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   color: #222;
 }
@@ -214,12 +238,15 @@ input[type="text"] {
 }
 
 .languages {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .languages a,
 .languages p {
   padding-right: 0.9rem;
+  -webkit-text-decoration: solid;
   text-decoration: solid;
   font-size: 1.3rem;
   font-family: arial,sans-serif;
@@ -233,7 +260,8 @@ input[type="text"] {
   text-decoration: underline;
 }
 
-.languages a:active,.languages a:visited {
+.languages a:active,
+.languages a:visited {
   color: #1a0dab;
 }
 
@@ -271,9 +299,14 @@ input[type="text"] {
 
 footer {
   grid-row: 4 / 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
   background-color: #f2f2f2;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
@@ -284,6 +317,7 @@ footer a {
   text-decoration: none;
   padding-left: 3.1rem;
   line-height: 4rem;
+  -webkit-text-decoration-style: solid;
   text-decoration-style: solid;
 }
 
@@ -292,6 +326,8 @@ footer a:hover {
 }
 
 footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
 }
@@ -408,6 +444,7 @@ footer div {
     margin-left: 0rem;
     border-radius: 0.8rem 0 0 0.8rem;
     padding: 1rem 3rem 1rem 1rem;
+    -webkit-box-shadow: none;
     box-shadow: none;
     border-style: solid;
     border: 1px solid #d9d9d9;
@@ -437,6 +474,7 @@ footer div {
   }
 
   #signin:hover {
+    -webkit-box-shadow: none;
     box-shadow: none;
   }
 
@@ -453,8 +491,10 @@ footer div {
     font-size: 1.2rem;
     font-weight: bold;
     text-transform: uppercase;
+    -ms-flex-line-pack: center;
     align-content: center;
     border-bottom: 2px solid #4285f4;
+    -webkit-box-sizing: content-box;
     box-sizing: content-box;
     padding-bottom: 1.5rem;
     color: #757575;
@@ -535,12 +575,19 @@ footer div {
   }
 
   footer {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
 
   footer div {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     width: 215px;
     height: 0px;
@@ -572,30 +619,42 @@ footer div {
 
   #advertising {
     padding: 0;
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
     order: 3;
   }
 
   #settings {
     padding: 0;
+    -webkit-box-ordinal-group: 1;
+    -ms-flex-order: 0;
     order: 0;
   }
 
   #privacy {
     margin: 0;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
     order: 1;
   }
 
   #business {
+    -webkit-box-ordinal-group: 5;
+    -ms-flex-order: 4;
     order: 4;
   }
 
   #terms {
     padding: 0;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
     order: 2;
   }
 
   #fabout {
     display: inline;
+    -webkit-box-ordinal-group: 6;
+    -ms-flex-order: 5;
     order: 5;
     padding: 0;
   }
