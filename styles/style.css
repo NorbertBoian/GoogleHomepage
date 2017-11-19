@@ -207,7 +207,6 @@ input[type="text"] {
 
 #lucky {
   margin-right: 0px;
-
 }
 
 .buttons input {
@@ -261,7 +260,8 @@ input[type="text"] {
 }
 
 .languages a:active,
-.languages a:visited,.languages a {
+.languages a:visited,
+.languages a {
   color: #1a0dab;
 }
 
@@ -399,8 +399,6 @@ footer div {
   .buttons input {
     padding: 1rem 1.6rem 0.9rem 1.6rem;
   }
-
-
 }
 
 @media (max-width: 650px) {
