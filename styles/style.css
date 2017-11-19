@@ -163,12 +163,12 @@ input[type="text"] {
 
 #voice {
   grid-area: 1 / 1 / 2 / 2;
-  width: 2.5rem;
-  height: 2.5rem;
-  background-image: url(../images/voice.svg);
+  width: 2.4rem;
+  height: 2.4rem;
+  background-image: url(../images/voice.png);
   background-size: cover;
   justify-self: end;
-  margin-right: 0.9rem;
+  margin-right: 1rem;
 }
 
 #search {
@@ -385,6 +385,7 @@ footer div {
 
   img {
     padding-bottom: 28px;
+    padding-left: 1px;
   }
 
   .buttons {
@@ -392,7 +393,7 @@ footer div {
   }
 
   #voice {
-    margin-right: 1.6rem;
+    margin-right: 1.8rem;
   }
 
   .buttons input {
